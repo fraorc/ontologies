@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://disamis.unisa.it/fraorc/onto/samples/ITSEGOexe"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://disamis.unisa.it/fraorc/onto/samples/ITSEGOexe">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ITSEGO" IRI="http://disamis.unisa.it/fraorc/onto/ITSEGO#"/>
+    <Prefix name="ITSEGOexe" IRI="http://disamis.unisa.it/fraorc/onto/samples/ITSEGOexe#"/>
+    <Import>http://disamis.unisa.it/fraorc/onto/ITSEGO</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">V 4.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The aims of this ontology is able to support the deployment of ITS capabilities
+at heterogeneous game environments (toys, structured games,
+etc.) in order to build Physical-Digital Game-based ITS.
+
+ITSEGO can be populated to build specific games empowered
+by means of intelligent tutoring features.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conductedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contextInCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generateA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haveA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inverseMatchesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nextStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#referTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#responseInCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stateInCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#storyInCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#template"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#withScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#currentLC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#feedback01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#feedback02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gameStateTask01Step01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gameStateTask01Step02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningCondition01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningCondition02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningCondition03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningContext01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningContext02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#learningContext03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#response01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#response02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#response03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#responseTemplate01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#responseTemplate02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#responseTemplate03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rule01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rule02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rule03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step0301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#story01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#story02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#story03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#task01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#task02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#task03"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="ITSEGO:ApplicableAction"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="ITSEGO:TutoringAction"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="ITSEGO:isImplied"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="ITSEGO:hasCondition"/>
+                    <ObjectIntersectionOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty abbreviatedIRI="ITSEGO:context"/>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#contextInCondition"/>
+                                <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                            </ObjectSomeValuesFrom>
+                        </ObjectSomeValuesFrom>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty abbreviatedIRI="ITSEGO:gameState"/>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#stateInCondition"/>
+                                <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                            </ObjectSomeValuesFrom>
+                        </ObjectSomeValuesFrom>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#template"/>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#inverseMatchesWith"/>
+                                <ObjectSomeValuesFrom>
+                                    <ObjectProperty IRI="#responseInCondition"/>
+                                    <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                                </ObjectSomeValuesFrom>
+                            </ObjectSomeValuesFrom>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="ITSEGO:ApplicablePedagogicalRule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="ITSEGO:hasCondition"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="ITSEGO:context"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#contextInCondition"/>
+                        <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="ITSEGO:gameState"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#stateInCondition"/>
+                        <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#template"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#inverseMatchesWith"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#responseInCondition"/>
+                            <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectSomeValuesFrom>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+        <Class abbreviatedIRI="ITSEGO:Context"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+        <Class abbreviatedIRI="ITSEGO:Rule"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+        <Class abbreviatedIRI="ITSEGO:Story"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+        <Class abbreviatedIRI="ITSEGO:StoryElement"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+        <Class abbreviatedIRI="ITSEGO:TutoringAction"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:CurrentLearningCondition"/>
+        <NamedIndividual IRI="#currentLC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Feedback"/>
+        <NamedIndividual IRI="#feedback01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Feedback"/>
+        <NamedIndividual IRI="#feedback02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:GameState"/>
+        <NamedIndividual IRI="#gameStateTask01Step01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:GameState"/>
+        <NamedIndividual IRI="#gameStateTask01Step02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+        <NamedIndividual IRI="#learningCondition02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+        <NamedIndividual IRI="#learningCondition03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningContext"/>
+        <NamedIndividual IRI="#learningContext01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningContext"/>
+        <NamedIndividual IRI="#learningContext02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:LearningContext"/>
+        <NamedIndividual IRI="#learningContext03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Response"/>
+        <NamedIndividual IRI="#response01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Response"/>
+        <NamedIndividual IRI="#response02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Response"/>
+        <NamedIndividual IRI="#response03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+        <NamedIndividual IRI="#responseTemplate01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+        <NamedIndividual IRI="#responseTemplate02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+        <NamedIndividual IRI="#responseTemplate03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:PedagogicalRule"/>
+        <NamedIndividual IRI="#rule01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:PedagogicalRule"/>
+        <NamedIndividual IRI="#rule02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:PedagogicalRule"/>
+        <NamedIndividual IRI="#rule03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+        <NamedIndividual IRI="#step0301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Story"/>
+        <NamedIndividual IRI="#story01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Story"/>
+        <NamedIndividual IRI="#story02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Story"/>
+        <NamedIndividual IRI="#story03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Task"/>
+        <NamedIndividual IRI="#task01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Task"/>
+        <NamedIndividual IRI="#task02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ITSEGO:Task"/>
+        <NamedIndividual IRI="#task03"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:context"/>
+        <NamedIndividual IRI="#currentLC"/>
+        <NamedIndividual IRI="#learningContext01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:gameState"/>
+        <NamedIndividual IRI="#currentLC"/>
+        <NamedIndividual IRI="#gameStateTask01Step01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:response"/>
+        <NamedIndividual IRI="#currentLC"/>
+        <NamedIndividual IRI="#response01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:story"/>
+        <NamedIndividual IRI="#currentLC"/>
+        <NamedIndividual IRI="#story01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#template"/>
+        <NamedIndividual IRI="#currentLC"/>
+        <NamedIndividual IRI="#responseTemplate01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:isImplied"/>
+        <NamedIndividual IRI="#feedback01"/>
+        <NamedIndividual IRI="#rule01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:context"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+        <NamedIndividual IRI="#learningContext01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:gameState"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+        <NamedIndividual IRI="#gameStateTask01Step01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:response"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+        <NamedIndividual IRI="#response01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:story"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+        <NamedIndividual IRI="#story01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#template"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+        <NamedIndividual IRI="#responseTemplate01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:matchesWith"/>
+        <NamedIndividual IRI="#response01"/>
+        <NamedIndividual IRI="#responseTemplate01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasCondition"/>
+        <NamedIndividual IRI="#rule01"/>
+        <NamedIndividual IRI="#learningCondition01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:firstStep"/>
+        <NamedIndividual IRI="#task01"/>
+        <NamedIndividual IRI="#step0101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:firstStep"/>
+        <NamedIndividual IRI="#task02"/>
+        <NamedIndividual IRI="#step0201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ITSEGO:firstStep"/>
+        <NamedIndividual IRI="#task03"/>
+        <NamedIndividual IRI="#step0301"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="ITSEGO:context"/>
+        <ObjectProperty IRI="#contextInCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="ITSEGO:gameState"/>
+        <ObjectProperty IRI="#stateInCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="ITSEGO:isImplied"/>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasAction"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#inverseMatchesWith"/>
+        <ObjectProperty abbreviatedIRI="ITSEGO:matchesWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="ITSEGO:response"/>
+        <ObjectProperty IRI="#responseInCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="ITSEGO:story"/>
+        <ObjectProperty IRI="#storyInCondition"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasAction"/>
+        <Class abbreviatedIRI="ITSEGO:PedagogicalRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasCondition"/>
+        <Class abbreviatedIRI="ITSEGO:PedagogicalRule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conductedIn"/>
+        <Class abbreviatedIRI="ITSEGO:Interaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contextInCondition"/>
+        <Class abbreviatedIRI="ITSEGO:LearningContext"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generateA"/>
+        <Class abbreviatedIRI="ITSEGO:Interaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#haveA"/>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <Class abbreviatedIRI="ITSEGO:Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#referTo"/>
+        <Class abbreviatedIRI="ITSEGO:Interaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class abbreviatedIRI="ITSEGO:Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#storyInCondition"/>
+        <Class abbreviatedIRI="ITSEGO:Story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#template"/>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#withScore"/>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasAction"/>
+        <Class abbreviatedIRI="ITSEGO:TutoringAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ITSEGO:hasCondition"/>
+        <Class abbreviatedIRI="ITSEGO:Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#conductedIn"/>
+        <Class abbreviatedIRI="ITSEGO:Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contextInCondition"/>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generateA"/>
+        <Class abbreviatedIRI="ITSEGO:Response"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#haveA"/>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedBy"/>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nextStep"/>
+        <Class abbreviatedIRI="ITSEGO:Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#referTo"/>
+        <Class abbreviatedIRI="ITSEGO:Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class abbreviatedIRI="ITSEGO:TutoringAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#storyInCondition"/>
+        <Class abbreviatedIRI="ITSEGO:LearningCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#template"/>
+        <Class abbreviatedIRI="ITSEGO:ExpectedResponse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#withScore"/>
+        <Class abbreviatedIRI="ITSEGO:Score"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Character</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Specific characters with defined roles can be used to provide positive or negative feedback, help learners with hints, guide learners to the next steps or tasks, motivate learners, explain the problem to solve, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Condition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Elements that are considered in the condition in order to make decisions
+about the tutoring action to deliver.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Context</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An interaction occurs in a given context (i.e., a set of contextual information like, for instance, the learner’ profile).
+
+The class  includes: student model information and contextual information like, for instance,environment or situation characteristics during learners’ interactions with the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:ExpectedResponse</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ITSEGO:ExpectedResponse is linked to the class ITSEGO:Step and indicates response
+templates for an individual step. Each response template (for a step) contains also a score.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:GameState</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Provide a description of the game progress (i.e., score, current task) at a given point in time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Interaction</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Represent the interactions among learner (student) and system. It provides a link to the specific environment (platform) used to deploy tasks and steps, receive user inputs and provide outputs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:LearningCondition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Conditions are individuals belonging to class ITSEGO:LearningCondition and are composed by game state (task and step executed by the learner), context (up to date information related to the learner: scores, attempts, emotions, profile, etc.), response (correctness and other information about the learner’s response with respect to the considered task and step) and story environment (the configuration of the story environment underlying the game).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:LearningContext</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:PedagogicalRule</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The sequence of tasks, proposed to the learner, can be obtained by applying
+specific pedagogical rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Response</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Represents data related to the answer that the learner provides when a specific step in a specific task is proposed to her or his.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Scene</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A scene is defined as a set of acts (individuals of class RST:Act) that are hierarchically composed of nucleuses and satellite entities linked by relations. Acts establish the minimum level of story organization. Such entities could contain an
+event (individual of class RST:Event) or another act.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Score</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Class is used to model the score earned by successfully executing
+the related step.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Setting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The class ITSEGO:Setting  provides the graphical elements of a scene.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Step</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A task is composed by one or more step. The single step is defined as the execution of an activity through the user interface that is necessary to complete a task.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Story</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Represents the environment within students interacting and characters or objects that populate it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:StoryElement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Story elements can be characters (individuals of ITSEGO:Character), settings
+(individuals of ITSEGO:Setting) and scenes (individuals of ITSEGO:Scene that is equivalent to RST:Scene.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:Task</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Indicates the tasks that students or a team can do for learning something. The duration of every task can be different (e.g., minus, hour) and they can be supported by a tutor action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ITSEGO:TutoringAction</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">It is the action that the tutor (human or automatic) has to perform in order to adapt
+the experience in response to a specific learner’s interaction (e.g., prompt, hint).</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
